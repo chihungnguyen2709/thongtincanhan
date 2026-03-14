@@ -1,0 +1,352 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chí Hùng Nguyễn - Trang Thông Tin Cá Nhân</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+  <div class="page-loader" id="pageLoader" aria-hidden="false">
+    <div class="loader-content">
+      <div class="loader-orb"></div>
+      <div class="loader-text">Chờ mình một tí nhé, đang fix cho đẹp hơn tí á...</div>
+    </div>
+  </div>
+  <header class="hero" id="top">
+    <div class="hero-glow"></div>
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">HN</span>
+        <div class="brand-text">
+          <div class="brand-name">Nguyễn Chí Hùng</div>
+          <div class="brand-role">Developer • UI/UX</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="mini-widget">
+          <span class="mini-label">Giờ</span>
+          <span class="mini-value" id="miniClockTime">00:00</span>
+        </div>
+        <div class="mini-widget">
+          <span class="mini-label" id="miniWeatherPlace">Thời tiết</span>
+          <span class="mini-value" id="miniWeatherTemp">--°C</span>
+        </div>
+        <button class="theme-btn" id="themeToggle" aria-label="Chuyển chế độ sáng tối" aria-pressed="false">
+          <span class="theme-icon sun" aria-hidden="true">☀</span>
+          <span class="theme-icon moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="nav-center">
+          <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuPanel">
+            Menu
+          </button>
+          <div class="menu-panel" id="menuPanel" role="menu">
+            <a href="#about" role="menuitem">Giới thiệu</a>
+            <a href="#contact" role="menuitem">Liên hệ</a>
+            <a href="#skills" role="menuitem">Kỹ năng</a>
+            <a href="#projects" role="menuitem">Dự án</a>
+            <a href="#tools" role="menuitem">Tiện ích</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-layout">
+      <div class="hero-content">
+        <p class="eyebrow">Xin chào, mình là</p>
+        <h1>Nguyễn Chí Hùng</h1>
+        <p class="hero-lead">
+          Mình xây dựng trải nghiệm web hiện đại, trực quan và giàu cảm xúc. Bên dưới là các mục thông tin cá nhân cùng bộ tiện ích tương tác mà mình đã build.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#about">Khám phá hồ sơ</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <div class="metric-value">21</div>
+            <div class="metric-label">Tuổi</div>
+          </div>
+          <div>
+            <div class="metric-value">Hà Nội</div>
+            <div class="metric-label">Nơi ở hiện tại</div>
+          </div>
+          <div hidden>
+            <div class="metric-value">12</div>
+            <div class="metric-label">Khách hàng thân thiết</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="image-box" id="heroImageBox">
+          <img id="heroImagePreview" src="profile-placeholder.jpg" alt="Ảnh đại diện 500x500" width="500" height="500" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="section-eyebrow">Hồ sơ</p>
+        <h2>Giới thiệu</h2>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>Về mình</h3>
+          <p>
+            Mình đang tập làm UI/UX, mình thích chụp ảnh linh tinh, hope u enjoy this little project.....
+          </p>
+          <ul class="pill-list">
+            <li>TP. Hà Nội</li>
+            <li>Freelance</li>
+            <li>Ngôn ngữ: VI • EN (US)</li>
+          </ul>
+        </div>
+        <div class="card highlight">
+          <h3>Giá trị cốt lõi</h3>
+          <div class="value-list">
+            <div>
+              <h4>Chủ động</h4>
+              <p>Luôn đề xuất phương án và thử nghiệm nhanh để tối ưu thời gian.</p>
+            </div>
+            <div>
+              <h4>Rõ ràng</h4>
+              <p>Thiết kế hệ thống UI với ngôn ngữ trực quan, dễ tái sử dụng.</p>
+            </div>
+            <div>
+              <h4>Thấu cảm</h4>
+              <p>Đặt trải nghiệm người dùng vào trung tâm trong mọi quyết định.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <p class="section-eyebrow">Kết nối</p>
+        <h2>Liên hệ</h2>
+      </div>
+      <div class="grid two">
+        <div class="card contact-card">
+          <h3>Thông tin liên hệ</h3>
+          <div class="contact-block">
+            <span>Địa chỉ</span>
+            <strong>số 15, ngõ 90, Phố Hoa Bằng, Phường Yên Hòa</strong>
+            <strong>TP. Hà Nội, Việt Nam</strong>
+          </div>
+          <div class="contact-block">
+            <span>Email</span>
+            <strong>nch.hungg@gmail.com (Cá nhân)</strong>
+            <strong>chihungnguyen889@gmail.com (Work)</strong>
+          </div>
+          <div class="contact-block">
+            <span>Số điện thoại</span>
+            <strong>+84 944 753 193 (Cá nhân)</strong>
+            <strong>+84 975 406 103 (Work)</strong>
+          </div>
+        </div>
+        <div class="card contact-card highlight">
+          <h3>Mạng xã hội</h3>
+          <p>Liên lạc online với mình qua cá MXH sau đây nhéeeee.</p>
+          <div class="social-grid">
+            <a class="social-btn" href="https://www.facebook.com/chihungnguyen2644" target="_blank" rel="noopener">Facebook</a>
+            <a class="social-btn" href="https://www.instagram.com/nch.hungg/" target="_blank" rel="noopener">Instagram 1</a>
+            <a class="social-btn" href="https://www.instagram.com/chihng.ngn/" target="_blank" rel="noopener">Instagram 2</a>
+            <a class="social-btn" href="https://x.com/nch_hng" target="_blank" rel="noopener">X (Twitter)</a>
+            <button class="social-btn" id="zaloBtn" type="button">Zalo</button>
+            <a class="social-btn mail" href="mailto:chihungnguyen889@gmail.com">Mail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" hidden>
+      <div class="section-head">
+        <p class="section-eyebrow">Năng lực</p>
+        <h2>Kỹ năng nổi bật</h2>
+      </div>
+      <div class="grid three">
+        <div class="card">
+          <h3>Frontend</h3>
+          <p>React, Next.js, Vue, TypeScript, Web Animation API, GSAP.</p>
+        </div>
+        <div class="card">
+          <h3>Thiết kế</h3>
+          <p>Figma, Design System, UX Audit, Prototype tương tác.</p>
+        </div>
+        <div class="card">
+          <h3>Quy trình</h3>
+          <p>Discovery, Wireframe, UI spec, handoff, QA đa nền tảng.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" hidden>
+      <div class="section-head">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2>Dự án tiêu biểu</h2>
+      </div>
+      <div class="grid two">
+        <div class="card project">
+          <h3>Neon Commerce</h3>
+          <p>Thiết kế lại storefront với UI tối giản, tăng 35% tỷ lệ chuyển đổi.</p>
+          <div class="tag-row">
+            <span>UI/UX</span>
+            <span>React</span>
+            <span>Design System</span>
+          </div>
+        </div>
+        <div class="card project">
+          <h3>Atlas Dashboard</h3>
+          <p>Dashboard dữ liệu realtime, tối ưu luồng thao tác cho đội vận hành.</p>
+          <div class="tag-row">
+            <span>Data Viz</span>
+            <span>Vue</span>
+            <span>Motion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="section-head">
+        <p class="section-eyebrow">Tiện ích</p>
+        <h2>Bộ tính năng</h2>
+      </div>
+      <div class="grid two">
+        <div class="card tool">
+          <div class="tool-head">
+            <h3>Máy tính cá nhân</h3>
+            <div class="toggle-group">
+              <button class="toggle-btn active" data-mode="basic">Mặc Định</button>
+              <button class="toggle-btn" data-mode="scientific">Khoa học</button>
+            </div>
+          </div>
+          <div class="calculator">
+            <div class="calc-display" id="calcDisplay">0</div>
+            <div class="calc-actions">
+              <button class="calc-btn" data-action="clear">C</button>
+              <button class="calc-btn" data-action="backspace">⌫</button>
+              <button class="calc-btn" data-value="(">(</button>
+              <button class="calc-btn" data-value=")">)</button>
+
+              <button class="calc-btn sci-only" data-value="sin(">sin</button>
+              <button class="calc-btn sci-only" data-value="cos(">cos</button>
+              <button class="calc-btn sci-only" data-value="tan(">tan</button>
+              <button class="calc-btn sci-only" data-value="sqrt(">√</button>
+
+              <button class="calc-btn" data-value="7">7</button>
+              <button class="calc-btn" data-value="8">8</button>
+              <button class="calc-btn" data-value="9">9</button>
+              <button class="calc-btn" data-value="÷">÷</button>
+
+              <button class="calc-btn sci-only" data-value="log(">log</button>
+              <button class="calc-btn sci-only" data-value="ln(">ln</button>
+              <button class="calc-btn sci-only" data-value="pow(">xʸ</button>
+              <button class="calc-btn sci-only" data-value="^">^</button>
+
+              <button class="calc-btn" data-value="4">4</button>
+              <button class="calc-btn" data-value="5">5</button>
+              <button class="calc-btn" data-value="6">6</button>
+              <button class="calc-btn" data-value="×">×</button>
+
+              <button class="calc-btn sci-only" data-value="π">π</button>
+              <button class="calc-btn sci-only" data-value="e">e</button>
+              <button class="calc-btn sci-only" data-value="%">%</button>
+              <button class="calc-btn sci-only" data-value=",">,</button>
+
+              <button class="calc-btn" data-value="1">1</button>
+              <button class="calc-btn" data-value="2">2</button>
+              <button class="calc-btn" data-value="3">3</button>
+              <button class="calc-btn" data-value="−">−</button>
+
+              <button class="calc-btn" data-value="0">0</button>
+              <button class="calc-btn" data-value=".">.</button>
+              <button class="calc-btn" data-action="equals">=</button>
+              <button class="calc-btn" data-value="+">+</button>
+            </div>
+          </div>
+          <p class="calc-hint">Nè: gõ trực tiếp bằng bàn phím nhập nhanh hơn nhéeee.</p>
+        </div>
+
+        <div class="card tool">
+          <div class="tool-head">
+            <h3>Đồng hồ toàn màn hình</h3>
+            <button class="btn ghost" id="fullscreenBtn">Toàn màn hình</button>
+          </div>
+          <div class="clock" id="clockPanel">
+            <div class="clock-date" id="clockDate">Thứ Hai, 01/01/2026</div>
+            <div class="clock-time" id="clockTime">00:00:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid one">
+        <div class="card tool weather-wide">
+          <div class="tool-head">
+            <h3>Thời tiết khu vực</h3>
+            <button class="btn ghost" id="locateBtn">Dùng vị trí của tôi</button>
+          </div>
+          <div class="weather">
+            <div class="weather-controls">
+              <input type="text" id="cityInput" placeholder="Nhập thành phố (VD: Da Nang)" />
+              <button class="btn primary" id="searchCityBtn">Xem thời tiết</button>
+            </div>
+            <div class="weather-status" id="weatherStatus">Nhập địa điểm để xem dự báo.</div>
+            <div class="weather-card" id="weatherCard">
+              <div class="weather-main">
+                <div>
+                  <div class="weather-place">Vị trí: <span id="weatherPlace">—</span></div>
+                  <div class="weather-desc" id="weatherDesc">Chưa có dữ liệu</div>
+                </div>
+                <div class="weather-temp" id="weatherTemp">--°C</div>
+              </div>
+              <div class="weather-meta">
+                <span id="weatherFeels">Cảm giác: --°C</span>
+                <span id="weatherWind">Gió: -- km/h</span>
+                <span id="weatherTime">Cập nhật: --</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="zaloModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="zaloTitle">
+      <div class="modal-head">
+        <h4 id="zaloTitle">Kết nối Zalo</h4>
+        <button class="modal-close" id="zaloClose" type="button">Đóng</button>
+      </div>
+      <div class="modal-content">
+        <img src="Zalo_main.jpg" alt="Zalo QR 1" width="500" height="500" />
+        <img src="Zalo_CV.png" alt="Zalo QR 2" width="500" height="500" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 From CHN with luv <3. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://facebook.com/chihungnguyen2644" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.5 8.5V6.7c0-.5.3-.9.9-.9h1.6V3.2h-2.2c-2.4 0-3.6 1.4-3.6 3.4v1.9H8v2.6h2.2V21h2.7v-9.9h2.3l.4-2.6h-2.7z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/nch.hungg/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5.3A3.7 3.7 0 1 0 15.7 12 3.7 3.7 0 0 0 12 8.3zm0 6.2A2.5 2.5 0 1 1 14.5 12 2.5 2.5 0 0 1 12 14.5zm6-6.6a.9.9 0 1 1-.9-.9.9.9 0 0 1 .9.9z"/>
+        </svg>
+      </a>
+      <a href="mailto:chihungnguyen889@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.3l8 4.7 8-4.7V7H4zm16 10V9.4l-8 4.7-8-4.7V17h16z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
